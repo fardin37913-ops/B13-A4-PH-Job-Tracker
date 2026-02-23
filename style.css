@@ -1,39 +1,171 @@
-* { box-sizing: border-box; }
-body { font-family: 'Segoe UI', sans-serif; background-color: #f5f7f9; margin: 0; padding: 20px; }
-.container { max-width: 850px; margin: 0 auto; }
 
-/* Dashboard Boxes - Small and compact */
-.stats-container { display: flex; gap: 12px; margin-bottom: 30px; }
-.stat-box { background: white; flex: 1; padding: 12px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
-.stat-box p { margin: 0; font-size: 13px; color: #666; }
-.stat-box h2 { margin: 5px 0 0; font-size: 20px; }
-.interview-box h2 { color: #10b981; }
-.rejected-box h2 { color: #ef4444; }
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin:0;
+}
 
-/* Titles & Section header */
-.section-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; }
-.section-header h2 { font-size: 20px; margin: 0; }
-#tab-job-count { color: #777; font-weight: 600; }
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f5f7f9;
+    margin: 0;
+    padding: 20px;
+}
 
-.tabs { display: flex; gap: 10px; margin-bottom: 20px; }
-.tab-btn { padding: 8px 16px; border: 1px solid #ddd; background: white; border-radius: 6px; cursor: pointer; font-size: 14px; }
-.tab-btn.active { background: #2563eb; color: white; border-color: #2563eb; }
+.container {
+    max-width: 850px;
+    margin: 0 auto;
+}
 
-/* Job Cards */
-.job-card { background: white; padding: 20px; border-radius: 12px; margin-bottom: 15px; position: relative; border: 1px solid #eee; }
-.del-btn { position: absolute; top: 15px; right: 15px; background: none; border: none; cursor: pointer; }
-.status-badge { display: inline-block; padding: 4px 8px; background: #f0f4ff; color: #3b82f6; font-size: 11px; font-weight: bold; border-radius: 4px; margin: 10px 0; }
-.meta { font-size: 13px; color: #666; margin-bottom: 10px; }
-.desc { font-size: 14px; color: #444; line-height: 1.4; }
+.stats-container {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 30px;
+}
 
-.actions { display: flex; gap: 10px; margin-top: 15px; }
-.int-btn, .rej-btn { padding: 8px 14px; border: 1px solid; border-radius: 6px; background: white; cursor: pointer; font-weight: 600; font-size: 12px; }
-.int-btn { color: #10b981; border-color: #10b981; }
-.rej-btn { color: #ef4444; border-color: #ef4444; }
+.stat-box {
+    background: white;
+    flex: 1;
+    padding: 12px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
 
-/* Responsive adjustments */
+.stat-box p {
+    margin: 0;
+    font-size: 13px;
+    color: #666;
+}
+
+.stat-box h2 {
+    margin: 5px 0 0;
+    font-size: 20px;
+}
+
+.interview-box h2 {
+    color: #10b981;
+}
+
+.rejected-box h2 {
+    color: #ef4444;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.section-header h2 {
+    font-size: 20px;
+    margin: 0;
+}
+
+#tab-job-count {
+    color: #777;
+    font-weight: 600;
+}
+
+.tabs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.tab-btn {
+    padding: 8px 16px;
+    border: 1px solid #ddd;
+    background: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.tab-btn.active {
+    background: #2563eb;
+    color: white;
+    border-color: #2563eb;
+}
+
+.job-card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    position: relative;
+    border: 1px solid #eee;
+}
+
+.del-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.status-badge {
+    display: inline-block;
+    padding: 4px 8px;
+    background: #f0f4ff;
+    color: #3b82f6;
+    font-size: 11px;
+    font-weight: bold;
+    border-radius: 4px;
+    margin: 10px 0;
+}
+
+.meta {
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.desc {
+    font-size: 14px;
+    color: #444;
+    line-height: 1.4;
+}
+
+.actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.int-btn, 
+.rej-btn {
+    padding: 8px 14px;
+    border: 1px solid;
+    border-radius: 6px;
+    background: white;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.int-btn {
+    color: #10b981;
+    border-color: #10b981;
+}
+
+.rej-btn {
+    color: #ef4444;
+    border-color: #ef4444;
+}
+
 @media (max-width: 600px) {
-    .stats-container { flex-direction: column; }
-    .section-header { flex-direction: row; } /* Keeping title and count side by side */
-    .actions { flex-direction: column; }
+    .stats-container {
+        flex-direction: column;
+    }
+
+    .section-header {
+        flex-direction: row;
+    }
+
+    .actions {
+        flex-direction: column;
+    }
 }
