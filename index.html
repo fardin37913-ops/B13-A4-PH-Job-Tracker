@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Hub Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Career Hub</h1>
+            <div class="stats-container">
+                <div class="stat-box">
+                    <p>Total</p>
+                    <h2 id="total-count">8</h2>
+                </div>
+                <div class="stat-box interview-box">
+                    <p>Interview</p>
+                    <h2 id="interview-count">0</h2>
+                </div>
+                <div class="stat-box rejected-box">
+                    <p>Rejected</p>
+                    <h2 id="rejected-count">0</h2>
+                </div>
+            </div>
+        </header>
+
+        <section>
+            <div class="section-header">
+                <h2>Available Jobs</h2>
+                <span id="tab-job-count">8 jobs</span>
+            </div>
+
+            <div class="tabs">
+                <button class="tab-btn active" id="all-tab">All</button>
+                <button class="tab-btn" id="interview-tab">Interview</button>
+                <button class="tab-btn" id="rejected-tab">Rejected</button>
+            </div>
+
+            <div id="job-list">
+                <div class="job-card" data-status="none">
+                    <button class="del-btn"><img src="https://cdn-icons-png.flaticon.com/512/6861/6861362.png" width="18"></button>
+                    <h3>Google</h3>
+                    <p class="role">Software Engineer</p>
+                    <div class="meta">Mountain View • Full-time • $180k</div>
+                    <div class="status-badge">NOT APPLIED</div>
+                    <p class="desc">Work on large scale distributed systems and cloud infrastructure.</p>
+                    <div class="actions">
+                        <button class="int-btn">INTERVIEW</button>
+                        <button class="rej-btn">REJECTED</button>
+                    </div>
+                </div>
+
+                <div class="job-card" data-status="none">
+                    <button class="del-btn"><img src="https://cdn-icons-png.flaticon.com/512/6861/6861362.png" width="18"></button>
+                    <h3>Amazon</h3>
+                    <p class="role">Frontend Developer</p>
+                    <div class="meta">Seattle • Full-time • $150k</div>
+                    <div class="status-badge">NOT APPLIED</div>
+                    <p class="desc">Build responsive and accessible interfaces for AWS console.</p>
+                    <div class="actions">
+                        <button class="int-btn">INTERVIEW</button>
+                        <button class="rej-btn">REJECTED</button>
+                    </div>
+                </div>
+
+                <div class="job-card" data-status="none">
+                    <button class="del-btn"><img src="https://cdn-icons-png.flaticon.com/512/6861/6861362.png" width="18"></button>
+                    <h3>Microsoft</h3>
+                    <p class="role">UI/UX Designer</p>
+                    <div class="meta">Redmond • Remote • $120k</div>
+                    <div class="status-badge">NOT APPLIED</div>
+                    <p class="desc">Design intuitive user experiences for Windows and Surface.</p>
+                    <div class="actions">
+                        <button class="int-btn">INTERVIEW</button>
+                        <button class="rej-btn">REJECTED</button>
+                    </div>
+                </div>
+
+                <div class="job-card" data-status="none">
+                    <button class="del-btn"><img src="https://cdn-icons-png.flaticon.com/512/6861/6861362.png" width="18"></button>
+                    <h3>Meta</h3>
+                    <p class="role">Data Scientist</p>
+                    <div class="meta">Menlo Park • Hybrid • $170k</div>
+                    <div class="status-badge">NOT APPLIED</div>
+                    <p class="desc">Apply machine learning to improve user engagement on Instagram.</p>
+                    <div class="actions">
+                        <button class="int-btn">INTERVIEW</button>
+                        <button class="rej-btn">REJECTED</button>
+                    </div>
+                </div>
+
+                <div class="job-card" data-status="none">
+                    <button class="del-btn"><img src="https://cdn-icons-png.flaticon.com/512/6861/6861362.png" width="18"></button>
+                    <h3>Netflix</h3>
+                    <p class="role">Backend Engineer</p>
+                    <div class="meta">Los Gatos • Remote • $200k</div>
+                    <div class="status-badge">NOT APPLIED</div>
+                    <p class="desc">Scaling streaming services for millions of global users.</p>
+                    <div class="actions">
+                        <button class="int-btn">INTERVIEW</button>
+                        <button class="rej-btn">REJECTED</button>
+                    </div>
+                </div>
+
+                <div class="job-card" data-status="none">
+                    <button class="del-btn"><img src="https://cdn-icons-png.flaticon.com/512/6861/6861362.png" width="18"></button>
+                    <h3>Tesla</h3>
+                    <p class="role">Cyber Security Analyst</p>
+                    <div class="meta">Austin • Full-time • $140k</div>
+                    <div class="status-badge">NOT APPLIED</div>
+                    <p class="desc">Securing autonomous driving systems and network infrastructure.</p>
+                    <div class="actions">
+                        <button class="int-btn">INTERVIEW</button>
+                        <button class="rej-btn">REJECTED</button>
+                    </div>
+                </div>
+
+                <div class="job-card" data-status="none">
+                    <button class="del-btn"><img src="https://cdn-icons-png.flaticon.com/512/6861/6861362.png" width="18"></button>
+                    <h3>Spotify</h3>
+                    <p class="role">Product Manager</p>
+                    <div class="meta">New York • Remote • $160k</div>
+                    <div class="status-badge">NOT APPLIED</div>
+                    <p class="desc">Leading the vision for personalized playlist algorithms.</p>
+                    <div class="actions">
+                        <button class="int-btn">INTERVIEW</button>
+                        <button class="rej-btn">REJECTED</button>
+                    </div>
+                </div>
+
+                <div class="job-card" data-status="none">
+                    <button class="del-btn"><img src="https://cdn-icons-png.flaticon.com/512/6861/6861362.png" width="18"></button>
+                    <h3>Airbnb</h3>
+                    <p class="role">Mobile Developer</p>
+                    <div class="meta">San Francisco • Remote • $155k</div>
+                    <div class="status-badge">NOT APPLIED</div>
+                    <p class="desc">Developing high-performance iOS and Android features.</p>
+                    <div class="actions">
+                        <button class="int-btn">INTERVIEW</button>
+                        <button class="rej-btn">REJECTED</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="empty-state" style="display: none; text-align: center; padding: 40px; background: white; border-radius: 12px;">
+                <img src="./images/assignment_7959593 1.png" width="100">
+                <h3>No jobs available</h3>
+                <p>There are no jobs in this category yet.</p>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
