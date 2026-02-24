@@ -1,4 +1,4 @@
-1. Difference between getElementById, getElementsByClassName, querySelector, and querySelectorAll
+1. Difference between getElementById, getElementsByClassName, querySelector, and querySelectorAll?
 
 These methods are used to select elements from the DOM.
 
@@ -45,7 +45,7 @@ getElementsByClassName	Multiple elements	Class
 querySelector	First match	Any CSS selector
 querySelectorAll	All matches	Any CSS selector
 
-2. How to Create and Insert a New Element into the DOM
+2. How to Create and Insert a New Element into the DOM?
 
 There are three main steps.
 
