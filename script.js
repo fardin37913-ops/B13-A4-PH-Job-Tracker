@@ -1,4 +1,3 @@
-
 const totalH2 = document.getElementById('total-count');
 const interviewH2 = document.getElementById('interview-count');
 const rejectedH2 = document.getElementById('rejected-count');
