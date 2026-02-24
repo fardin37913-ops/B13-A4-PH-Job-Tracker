@@ -156,6 +156,16 @@ body {
     border-color: #ef4444;
 }
 
+.status-badge.interview-color {
+    background-color: #D1FAE5 !important; 
+    color: #065F46 !important;            
+}
+
+.status-badge.rejected-color {
+    background-color: #FEE2E2; 
+    color: #991B1B ;            
+}
+
 @media (max-width: 600px) {
     .stats-container {
         flex-direction: column;
